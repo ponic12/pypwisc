@@ -1,54 +1,97 @@
 <div class="bkg">
   
 <div class="cardsBox">
-  <div [style.color]="c1.color" class="card">
-    <div [style.opacity]="((c1.nro==2)||(c1.nro==4))?1:0"><img [src]="shapeColor(c1)" height="20px"></div>
-    <div [style.opacity]="(false)?1:0" ><img [src]="shapeColor(c1)"  height="20px"></div>
-    <div [style.opacity]="((c1.nro==3)||(c1.nro==4))?1:0"><img [src]="shapeColor(c1)"  height="20px"></div>
-    <div [style.opacity]="(c1.nro==3)?1:0"><img [src]="shapeColor(c1)" height="20px"></div>
-    <div [style.opacity]="(c1.nro==1)?1:0"><img [src]="shapeColor(c1)" height="20px"></div>
-    <div [style.opacity]="(false)?1:0" ><img [src]="shapeColor(c1)" height="20px"></div>
-    <div [style.opacity]="(c1.nro==4)?1:0"><img [src]="shapeColor(c1)" height="20px"></div>
-    <div [style.opacity]="false?1:0"><img [src]="shapeColor(c1)" height="20px"></div>
-    <div [style.opacity]="((c1.nro==2)||(c1.nro==3)||(c1.nro==4))?1:0"><img [src]="shapeColor(c1)" height="20px"></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  
+  <div class="card" >
+    <div [style.opacity]="((c1.nro==2)||(c1.nro==4))?1:0"><img [src]="shapeColor(c1)"  ></div>
+    <div [style.opacity]="(false)?1:0" ><img [src]="shapeColor(c1)"   ></div>
+    <div [style.opacity]="((c1.nro==3)||(c1.nro==4))?1:0"><img [src]="shapeColor(c1)"   ></div>
+    <div [style.opacity]="(c1.nro==3)?1:0"><img [src]="shapeColor(c1)"  ></div>
+    <div [style.opacity]="(c1.nro==1)?1:0"><img [src]="shapeColor(c1)"  ></div>
+    <div [style.opacity]="(false)?1:0" ><img [src]="shapeColor(c1)"  ></div>
+    <div [style.opacity]="(c1.nro==4)?1:0"><img [src]="shapeColor(c1)"  ></div>
+    <div [style.opacity]="false?1:0"><img [src]="shapeColor(c1)"  ></div>
+    <div [style.opacity]="((c1.nro==2)||(c1.nro==3)||(c1.nro==4))?1:0"><img [src]="shapeColor(c1)"  ></div>
   </div>
-  <div [style.color]="c2.color" class="card">
-    <div [class]="c2.forma" [style.opacity]="((c2.nro==2)||(c2.nro==4))?1:0"><img [src]="shapeColor(c2)" height="20px"></div>
-    <div [class]="c2.forma" [style.opacity]="(false)?1:0"><img [src]="shapeColor(c2)" height="20px"></div>
-    <div [class]="c2.forma" [style.opacity]="((c2.nro==3)||(c2.nro==4))?1:0"><img [src]="shapeColor(c2)" height="20px"></div>
-    <div [class]="c2.forma" [style.opacity]="(c2.nro==3)?1:0"><img [src]="shapeColor(c2)" height="20px"></div>
-    <div [class]="c2.forma" [style.opacity]="(c2.nro==1)?1:0"><img [src]="shapeColor(c2)" height="20px"></div>
-    <div [class]="c2.forma" [style.opacity]="(false)?1:0" ><img [src]="shapeColor(c2)" height="20px"></div>
-    <div [class]="c2.forma" [style.opacity]="(c2.nro==4)?1:0"><img [src]="shapeColor(c2)" height="20px"></div>
-    <div [class]="c2.forma" [style.opacity]="false?1:0"><img [src]="shapeColor(c2)" height="20px"></div>
-    <div [class]="c2.forma" [style.opacity]="((c2.nro==2)||(c2.nro==3)||(c2.nro==4))?1:0"><img [src]="shapeColor(c2)" height="20px"></div>
+  <div class="card" >
+    <div [class]="c2.forma" [style.opacity]="((c2.nro==2)||(c2.nro==4))?1:0"><img [src]="shapeColor(c2)"  ></div>
+    <div [class]="c2.forma" [style.opacity]="(false)?1:0"><img [src]="shapeColor(c2)"  ></div>
+    <div [class]="c2.forma" [style.opacity]="((c2.nro==3)||(c2.nro==4))?1:0"><img [src]="shapeColor(c2)"  ></div>
+    <div [class]="c2.forma" [style.opacity]="(c2.nro==3)?1:0"><img [src]="shapeColor(c2)"  ></div>
+    <div [class]="c2.forma" [style.opacity]="(c2.nro==1)?1:0"><img [src]="shapeColor(c2)"  ></div>
+    <div [class]="c2.forma" [style.opacity]="(false)?1:0" ><img [src]="shapeColor(c2)"  ></div>
+    <div [class]="c2.forma" [style.opacity]="(c2.nro==4)?1:0"><img [src]="shapeColor(c2)"  ></div>
+    <div [class]="c2.forma" [style.opacity]="false?1:0"><img [src]="shapeColor(c2)"  ></div>
+    <div [class]="c2.forma" [style.opacity]="((c2.nro==2)||(c2.nro==3)||(c2.nro==4))?1:0"><img [src]="shapeColor(c2)"  ></div>
   </div>
-  <div [style.color]="c3.color" class="card">
-    <div [class]="c3.forma" [style.opacity]="((c3.nro==2)||(c3.nro==4))?1:0"><img [src]="shapeColor(c3)" height="20px"></div>
-    <div [class]="c3.forma" [style.opacity]="(false)?1:0"><img [src]="shapeColor(c3)" height="20px"></div>
-    <div [class]="c3.forma" [style.opacity]="((c3.nro==3)||(c3.nro==4))?1:0"><img [src]="shapeColor(c3)" height="20px"></div>
-    <div [class]="c3.forma" [style.opacity]="(c3.nro==3)?1:0"><img [src]="shapeColor(c3)" height="20px"></div>
-    <div [class]="c3.forma" [style.opacity]="(c3.nro==1)?1:0"><img [src]="shapeColor(c3)" height="20px"></div>
-    <div [class]="c3.forma" [style.opacity]="(false)?1:0" ><img [src]="shapeColor(c3)" height="20px"></div>
-    <div [class]="c3.forma" [style.opacity]="(c3.nro==4)?1:0"><img [src]="shapeColor(c3)" height="20px"></div>
-    <div [class]="c3.forma" [style.opacity]="false?1:0"><img [src]="shapeColor(c3)" height="20px"></div>
-    <div [class]="c3.forma" [style.opacity]="((c3.nro==2)||(c3.nro==3)||(c3.nro==4))?1:0"><img [src]="shapeColor(c3)" height="20px"></div>
+  <div class="card" >
+    <div [class]="c3.forma" [style.opacity]="((c3.nro==2)||(c3.nro==4))?1:0"><img [src]="shapeColor(c3)"  ></div>
+    <div [class]="c3.forma" [style.opacity]="(false)?1:0"><img [src]="shapeColor(c3)"  ></div>
+    <div [class]="c3.forma" [style.opacity]="((c3.nro==3)||(c3.nro==4))?1:0"><img [src]="shapeColor(c3)"  ></div>
+    <div [class]="c3.forma" [style.opacity]="(c3.nro==3)?1:0"><img [src]="shapeColor(c3)"  ></div>
+    <div [class]="c3.forma" [style.opacity]="(c3.nro==1)?1:0"><img [src]="shapeColor(c3)"  ></div>
+    <div [class]="c3.forma" [style.opacity]="(false)?1:0" ><img [src]="shapeColor(c3)"  ></div>
+    <div [class]="c3.forma" [style.opacity]="(c3.nro==4)?1:0"><img [src]="shapeColor(c3)"></div>
+    <div [class]="c3.forma" [style.opacity]="false?1:0"><img [src]="shapeColor(c3)"></div>
+    <div [class]="c3.forma" [style.opacity]="((c3.nro==2)||(c3.nro==3)||(c3.nro==4))?1:0"><img [src]="shapeColor(c3)" ></div>
   </div>
-  <div [style.color]="c4.color" class="card">
-    <div [style.opacity]="((c4.nro==2)||(c4.nro==4))?1:0"><img [src]="shapeColor(c4)" class="shape"></div>
-    <div [style.opacity]="(false)?1:0"><img [src]="shapeColor(c4)" class="shape"></div>
-    <div [style.opacity]="((c4.nro==3)||(c4.nro==4))?1:0"><img [src]="shapeColor(c4)" class="shape"></div>
-    <div [style.opacity]="(c4.nro==3)?1:0"><img [src]="shapeColor(c4)" class="shape"></div>
-    <div [style.opacity]="(c4.nro==1)?1:0"><img [src]="shapeColor(c4)" class="shape"></div>
-    <div [style.opacity]="(false)?1:0" ><img [src]="shapeColor(c4)" class="shape" ></div>
-    <div [style.opacity]="(c4.nro==4)?1:0"><img [src]="shapeColor(c4)" class="shape"></div>
-    <div [style.opacity]="false?1:0"><img [src]="shapeColor(c4)" class="shape"></div>
-    <div [style.opacity]="((c4.nro==2)||(c4.nro==3)||(c4.nro==4))?1:0"><img [src]="shapeColor(c4)" class="shape" ></div>
+  <div class="card" >
+    <div [style.opacity]="((c4.nro==2)||(c4.nro==4))?1:0"><img [src]="shapeColor(c4)"></div>
+    <div [style.opacity]="(false)?1:0"><img [src]="shapeColor(c4)" ></div>
+    <div [style.opacity]="((c4.nro==3)||(c4.nro==4))?1:0"><img [src]="shapeColor(c4)" ></div>
+    <div [style.opacity]="(c4.nro==3)?1:0"><img [src]="shapeColor(c4)"></div>
+    <div [style.opacity]="(c4.nro==1)?1:0"><img [src]="shapeColor(c4)"></div>
+    <div [style.opacity]="(false)?1:0" ><img [src]="shapeColor(c4)"  ></div>
+    <div [style.opacity]="(c4.nro==4)?1:0"><img [src]="shapeColor(c4)"></div>
+    <div [style.opacity]="false?1:0"><img [src]="shapeColor(c4)" ></div>
+    <div [style.opacity]="((c4.nro==2)||(c4.nro==3)||(c4.nro==4))?1:0"><img [src]="shapeColor(c4)" ></div>
   </div>
   
-  <div [style.color]="red">
-    HOLA
+  <button (click)="evalSel(c1)" class="btnEval" [disabled]="cardsCounter==0">Carta 1</button>
+  <button (click)="evalSel(c2)" class="btnEval" [disabled]="cardsCounter==0">Carta 2</button>
+  <button (click)="evalSel(c3)" class="btnEval" [disabled]="cardsCounter==0">Carta 3</button>
+  <button (click)="evalSel(c4)" class="btnEval" [disabled]="cardsCounter==0">Carta 4</button>
+  
+  <button (click)="startTest()" class="btnStart" *ngIf="cardsCounter==0">
+    Comenzar el Test
+  </button>
+  <button (click)="startTest()" class="btnEnd" *ngIf="cardsCounter>cards.length">
+    Test Finalizado (Reinicio)
+  </button>
+  <div class="card select" *ngIf="cardsCounter>0">
+    <div [style.opacity]="((sel.nro==2)||(sel.nro==4))?1:0"><img [src]="shapeColor(sel)"></div>
+    <div [style.opacity]="(false)?1:0"><img [src]="shapeColor(sel)"></div>
+    <div [style.opacity]="((sel.nro==3)||(sel.nro==4))?1:0"><img [src]="shapeColor(sel)"></div>
+    <div [style.opacity]="(sel.nro==3)?1:0"><img [src]="shapeColor(sel)"></div>
+    <div [style.opacity]="(sel.nro==1)?1:0"><img [src]="shapeColor(sel)"></div>
+    <div [style.opacity]="(false)?1:0" ><img [src]="shapeColor(sel)"  ></div>
+    <div [style.opacity]="(sel.nro==4)?1:0"><img [src]="shapeColor(sel)" ></div>
+    <div [style.opacity]="false?1:0"><img [src]="shapeColor(sel)"></div>
+    <div [style.opacity]="((sel.nro==2)||(sel.nro==3)||(sel.nro==4))?1:0"><img [src]="shapeColor(sel)" ></div>
   </div>
+  
+  <div>
+    <div>
+      Carta Nro: {{cardsCounter}}
+    </div>
+    <div>
+      Serie: {{series[this.seriesIndex]}}
+    </div>
+    <div>
+      Correctas: {{result.correct}}
+    </div>
+    <div>
+      Incorrectas: {{result.incorrect}}
+    </div>
+    <div>
+      Partials: {{result.partialOK}}
+    </div>
+  </div>
+
 </div>
 
 </div>

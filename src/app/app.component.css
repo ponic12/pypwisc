@@ -10,59 +10,65 @@
     display:grid;
     grid-gap:10px;
     grid-template-columns:repeat(4,100px);
-    grid-template-rows:1fr 1fr;
+    grid-template-rows:1fr 2fr 50px 3fr;
 }
 
-/*
-.cardsBox > div {
-    display: grid;
-    justify-content:center;
-    align-items:center;
-    grid-gap:4px;
-    grid-template-columns:repeat(3,1fr);
-    grid-template-rows:repeat(3,1fr);
-    background-color: lime;
-    box-shadow: 2px 2px 2px #888888;
+    .cardsBox .select {
+        grid-column: 2 / 4;
+        align-self:center;
+        justify-content:center;
+    }
+    
+    .cardsBox .btnStart {
+        height: 40px;
+        font-size:20px;
+        font-weight: bold;
+        background:lightgreen;
+        box-shadow: 3px 3px 3px #666;
+        grid-column: 2 / 4;
+        align-self:center;
+    }
+
+.btnEval {
+    background-color: lightgray;
+    box-shadow: 3px 3px 3px #666;
+    border: 2px solid black;
+    height: 30px;
+    border-radius: 5px;
+    font-size:20px;
+    font-weight: bold;
 }
-*/
 
 .card {
-    padding:0px;
+    padding:10px;
     display: grid;
     height: 100px;
-    justify-content:center;
-    align-items:center;
+    width:80px;
+    /*justify-content:center;
+    align-items:center;*/
+    border-radius: 10px;
     grid-gap:0px;
     grid-template-columns:repeat(3,1fr);
-    grid-template-rows:repeat(3,2fr);
+    grid-template-rows:repeat(3,1fr);
     background-color: white;
-    box-shadow: 2px 2px 2px #888888;
+    box-shadow: 5px 5px 5px #555;
 }
 
-.shape {
+.card > div >img {
+    /*background:lightblue;*/
     height:30px;
-    background:lightgray;
+    width:30px;
+    margin-left: -2px;
 }
 
 .triangle{
-    /*height:30px;
-    text-align: center;
-    vertical-align: center;
-    */background-color: #ddd;
-    box-shadow: 2px 2px 2px #888888;
 }
 
 .circle{
-    background-color: #ddd;
-    box-shadow: 2px 2px 2px #888888;
 }
 
 .cross{
-    background-color: #ddd;
-    box-shadow: 2px 2px 2px #888888;
 }
 
 .star{
-    background-color: #ddd;
-    box-shadow: 2px 2px 2px #888888;
 }

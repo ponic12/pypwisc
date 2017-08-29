@@ -1,0 +1,68 @@
+.bkg {
+    width:100%;
+    height:100vh;
+}
+.cardsBox{
+    height:100%;
+    justify-content:center;
+    align-items:center;
+    background: linear-gradient(to bottom, rgba(183,189,184,1) 0%, rgba(105,112,106,1) 100%);
+    display:grid;
+    grid-gap:10px;
+    grid-template-columns:repeat(4,100px);
+    grid-template-rows:1fr 1fr;
+}
+
+/*
+.cardsBox > div {
+    display: grid;
+    justify-content:center;
+    align-items:center;
+    grid-gap:4px;
+    grid-template-columns:repeat(3,1fr);
+    grid-template-rows:repeat(3,1fr);
+    background-color: lime;
+    box-shadow: 2px 2px 2px #888888;
+}
+*/
+
+.card {
+    padding:0px;
+    display: grid;
+    height: 100px;
+    justify-content:center;
+    align-items:center;
+    grid-gap:0px;
+    grid-template-columns:repeat(3,1fr);
+    grid-template-rows:repeat(3,2fr);
+    background-color: white;
+    box-shadow: 2px 2px 2px #888888;
+}
+
+.shape {
+    height:30px;
+    background:lightgray;
+}
+
+.triangle{
+    /*height:30px;
+    text-align: center;
+    vertical-align: center;
+    */background-color: #ddd;
+    box-shadow: 2px 2px 2px #888888;
+}
+
+.circle{
+    background-color: #ddd;
+    box-shadow: 2px 2px 2px #888888;
+}
+
+.cross{
+    background-color: #ddd;
+    box-shadow: 2px 2px 2px #888888;
+}
+
+.star{
+    background-color: #ddd;
+    box-shadow: 2px 2px 2px #888888;
+}

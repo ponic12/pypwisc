@@ -51,10 +51,10 @@
     <div [style.opacity]="((c4.nro==2)||(c4.nro==3)||(c4.nro==4))?1:0"><img [src]="shapeColor(c4)" ></div>
   </div>
   
-  <button (click)="evalSel(c1)" class="btnEval" [disabled]="cardsCounter==0">Carta 1</button>
-  <button (click)="evalSel(c2)" class="btnEval" [disabled]="cardsCounter==0">Carta 2</button>
-  <button (click)="evalSel(c3)" class="btnEval" [disabled]="cardsCounter==0">Carta 3</button>
-  <button (click)="evalSel(c4)" class="btnEval" [disabled]="cardsCounter==0">Carta 4</button>
+  <button (click)="evalSel(c1)" class="btnEval" [disabled]="disableButton">Carta 1</button>
+  <button (click)="evalSel(c2)" class="btnEval" [disabled]="disableButton">Carta 2</button>
+  <button (click)="evalSel(c3)" class="btnEval" [disabled]="disableButton">Carta 3</button>
+  <button (click)="evalSel(c4)" class="btnEval" [disabled]="disableButton">Carta 4</button>
   
   <button (click)="startTest()" class="btnStart" *ngIf="cardsCounter==0">
     Comenzar el Test
@@ -62,7 +62,7 @@
   <button (click)="startTest()" class="btnEnd" *ngIf="cardsCounter>cards.length">
     Test Finalizado (Reinicio)
   </button>
-  <div class="card select" *ngIf="cardsCounter>0">
+  <div class="card select" *ngIf="(cardsCounter>0)&&(!disableButton)" [@cardFlip]="sel==null">
     <div [style.opacity]="((sel.nro==2)||(sel.nro==4))?1:0"><img [src]="shapeColor(sel)"></div>
     <div [style.opacity]="(false)?1:0"><img [src]="shapeColor(sel)"></div>
     <div [style.opacity]="((sel.nro==3)||(sel.nro==4))?1:0"><img [src]="shapeColor(sel)"></div>
@@ -74,12 +74,15 @@
     <div [style.opacity]="((sel.nro==2)||(sel.nro==3)||(sel.nro==4))?1:0"><img [src]="shapeColor(sel)" ></div>
   </div>
   
-  <div>
+  <div class="results">
     <div>
       Carta Nro: {{cardsCounter}}
     </div>
     <div>
       Serie: {{series[this.seriesIndex]}}
+    </div>
+    <div>
+      Partials: {{result.partialOK}}
     </div>
     <div>
       Correctas: {{result.correct}}
@@ -88,7 +91,7 @@
       Incorrectas: {{result.incorrect}}
     </div>
     <div>
-      Partials: {{result.partialOK}}
+      Perseveraciones: {{result.perseverations}}
     </div>
   </div>
 

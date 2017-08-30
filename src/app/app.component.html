@@ -62,6 +62,7 @@
   <button (click)="startTest()" class="btnEnd" *ngIf="cardsCounter>cards.length">
     Test Finalizado (Reinicio)
   </button>
+  
   <div class="card select" *ngIf="(cardsCounter>0)&&(!disableButton)" [@cardFlip]="sel==null">
     <div [style.opacity]="((sel.nro==2)||(sel.nro==4))?1:0"><img [src]="shapeColor(sel)"></div>
     <div [style.opacity]="(false)?1:0"><img [src]="shapeColor(sel)"></div>
@@ -73,6 +74,8 @@
     <div [style.opacity]="false?1:0"><img [src]="shapeColor(sel)"></div>
     <div [style.opacity]="((sel.nro==2)||(sel.nro==3)||(sel.nro==4))?1:0"><img [src]="shapeColor(sel)" ></div>
   </div>
+  
+  <div class="evalResult" *ngIf="disableButton"><img [src]="resultImgPath" height="60px"></div>
   
   <div class="results">
     <div>

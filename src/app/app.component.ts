@@ -30,6 +30,7 @@ export class AppComponent implements OnInit{
   constructor() { }
 
   disableButton: boolean = true;
+  resultImgPath: string = "";
   
   colors: Array<string> = ["red", "green", "blue", "yellow"];
   shapes: Array<string> =["cross", "star", "circle", "triangle"];
@@ -66,7 +67,10 @@ export class AppComponent implements OnInit{
   
   evalSel(c) : void {
       this.disableButton = true;
-      setInterval(()=>this.disableButton=false, 1000);
+      setTimeout(()=>{
+          this.disableButton=false
+          },2000);
+      
       let serie = this.series[this.seriesIndex];
       if (((serie == 'color')&&(this.sel.color == c.color)) ||
           ((serie == 'shape')&&(this.sel.shape == c.shape)) ||
@@ -80,12 +84,14 @@ export class AppComponent implements OnInit{
           this.result.partialOK = 0;
           this.seriesIndex++;
           if (this.seriesIndex > 6)
-            this.cardsCounter = 127;
+            this.cardsCounter = 128;
         }
+        this.resultImgPath = './assets/images/ok.png';
       }
       else {
         this.result.partialOK = 0;
         this.result.incorrect = this.result.incorrect + 1;
+        this.resultImgPath = './assets/images/cancel.png';
         
         if (((serie == 'color')&&(this.sel.nro == c.nro)&&(this.seriesIndex==3)) ||
             ((serie == 'shape')&&(this.sel.color == c.color)) ||
